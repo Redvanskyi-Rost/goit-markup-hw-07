@@ -1,20 +1,20 @@
-.team-soc-list {
+.card-soc {
   display: flex;
   justify-content: center;
 }
 
-.team-soc-item {
+.card-soc__item {
   width: 44px;
   height: 44px;
   margin-left: 10px;
   margin-bottom: 30px;
+
+  &:first-child {
+    margin-left: 0;
+  }
 }
 
-.team-soc-item:first-child {
-  margin-left: 0;
-}
-
-.team-soc-link {
+.card-soc__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,20 +24,20 @@
   background-color: var(--primary-white-color);
 
   transition: background-color 250ms var(--animation-timing);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
 
-.team-soc-icon {
+.card-soc__icon {
   fill: var(--icon-color);
 
   transition: fill 250ms var(--animation-timing);
-}
 
-.team-soc-link:hover,
-.team-soc-link:focus {
-  background-color: var(--accent-color);
-}
-
-.team-soc-link:hover .team-soc-icon,
-.team-soc-link:focus .team-soc-icon {
-  fill: var(--primary-white-color);
+  .card-soc__link:hover &,
+  .card-soc__:focus & {
+    fill: var(--primary-white-color);
+  }
 }

@@ -2,9 +2,9 @@
   background-color: var(--footer-bg-color);
   padding-top: 60px;
   padding-bottom: 60px;
-}
 
-.footer-blocks {
-  display: flex;
-  align-items: baseline;
+  &-blocks {
+    display: flex;
+    align-items: baseline;
+  }
 }
