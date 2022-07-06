@@ -776,6 +776,7 @@ body {
 }
 .social__link:hover, .social__link:focus {
   background-color: var(--accent-color);
+  outline: none;
 }
 .social__icon {
   fill: var(--primary-white-color);
@@ -896,11 +897,14 @@ body {
   gap: 30px;
 }
 
-.portfolio-cards__items:hover {
+.portfolio-cards__link:hover,
+.portfolio-cards__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  outline-color: transparent;
 }
 
-.portfolio-cards__items:hover .portfolio-thumbs__text {
+.portfolio-cards__link:hover .portfolio-thumbs__text,
+.portfolio-cards__link:focus .portfolio-thumbs__text {
   transform: translate(0%);
 }
 
